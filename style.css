@@ -1,0 +1,386 @@
+body {
+    background-image: url('images/Sea-angel-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+.top-bar { 
+    display: absolute;
+    top: 10px;
+    left: 10px; 
+    width: 45px;
+    height: 45px;
+    padding: 7px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(15px) saturate(140%);
+    backdrop-filter: blur(5px) saturate(140%);
+    box-shadow: 
+      inset 0 1.5px 0 0 rgba(255, 255, 255, 0.6),
+      inset 0 10px 20px rgba(255, 255, 255, 0.05), 
+      0 20px 40px rgba(0, 0, 0, 0.3);             
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    isolation: isolate;
+    transition: all 0.25s ease-out;
+  }
+
+  .favicon-button { 
+    position: absolute;
+    top: 110px;
+    right: 10px; 
+    width: max-content;
+    height: 44;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(15px) saturate(140%);
+    backdrop-filter: blur(5px) saturate(140%);
+    box-shadow: 
+      inset 0 1.5px 0 0 rgba(255, 255, 255, 0.6),
+      inset 0 10px 20px rgba(255, 255, 255, 0.05), 
+      0 20px 40px rgba(0, 0, 0, 0.3);             
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    isolation: isolate;
+    cursor:pointer;
+    user-select: none;
+  }
+
+  .top-bar:hover {
+    height:312px;
+    inset 0 1.5px 0 0 rgba(255, 255, 255, 0.6),
+    inset 0 10px 20px rgba(255, 255, 255, 0.05), 
+    0 20px 40px rgba(0, 0, 0, 0.3);             
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease-out;
+  }
+  
+  .top-bar:hover .app-img {
+    max-height: 180px;
+    opacity: 1;
+    margin-top: 0px;
+    box-shadow: 
+  }
+
+
+  .app-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+  }
+
+  .app-img img:hover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45px;
+    height: auto;
+    object-fit: contain;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    transition: all 0.2s ease-in-out;
+  }
+
+.favicon-inp {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    width: 200px;
+  }
+  
+  .favicon-inp label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    user-select: none;
+  }
+
+  .favicon-inp input {
+    appearance: none;
+    outline: none;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(15px) saturate(140%);
+    backdrop-filter: blur(5px) saturate(140%);
+    box-shadow: 
+      inset 0 1.5px 0 0 rgba(255, 255, 255, 0.6),
+      inset 0 10px 20px rgba(255, 255, 255, 0.05), 
+      0 20px 40px rgba(0, 0, 0, 0.3);             
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+  }
+  
+  .favicon-inp input::placeholder {
+    color: rgba(255, 255, 255, 0.02);
+    opacity: 1;
+    user-select: none;
+  }
+
+  .favicon-inp input:focus {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #ffffff; 
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  }
+
+  .favicon-inp input:user-invalid {
+    border-color: #ef4444;
+  }
+
+  .title-inp {
+    position: absolute;
+    top: 60px;
+    right: 44px;
+    width: 200px;
+    user-select: none;
+  }
+  
+  .title-inp label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    user-select: none;
+  }
+
+  .title-inp input {
+    appearance: none;
+    outline: none;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(15px) saturate(140%);
+    backdrop-filter: blur(5px) saturate(140%);
+    box-shadow: 
+      inset 0 1.5px 0 0 rgba(255, 255, 255, 0.6),
+      inset 0 10px 20px rgba(255, 255, 255, 0.05), 
+      0 20px 40px rgba(0, 0, 0, 0.3);             
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+  }
+  
+  .title-inp input::placeholder {
+    color: rgba(255, 255, 255, 0.02);
+    opacity: 1;
+    user-select: none;
+  }
+
+  .title-inp input:focus {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #ffffff; 
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  }
+
+  .title-inp input:user-invalid {
+    border-color: #ef4444;
+  }
+
+  
+/* ---- App-window system ---- */
+#desktop {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5000;
+    resize: both;
+}
+
+.window {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width: max-content;
+    height: 300px;
+    min-width: 100px;
+    min-height: 100px;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    resize: both;
+    transition: all 0.1s ease-out;
+}
+
+.window-header {
+    position: relative;              
+    height: max-content;
+    line-height: max-content;
+    padding: 10px 70px 10px 10px;  
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(15px) saturate(140%);
+    backdrop-filter: blur(5px) saturate(140%);
+    box-shadow:
+        inset 0 1.5px 0 0 rgba(255, 255, 255, 0.6),
+        inset 0 10px 20px rgba(255, 255, 255, 0.05),
+        0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font: 13px sans-serif;
+    user-select: none;
+    overflow: hidden;
+    cursor: move;
+    flex-shrink: 0;
+}
+
+.window iframe {
+    flex: 1;
+    width: 100%;
+    height: 120%;
+    border: none;
+    display: block;
+    overflow: hidden;
+    resize: both;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(15px) saturate(140%);
+    backdrop-filter: blur(5px) saturate(140%);
+    box-shadow:
+        inset 0 1.5px 0 0 rgba(255, 255, 255, 0.6),
+        inset 0 10px 20px rgba(255, 255, 255, 0.05),
+        10px 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+
+.window-fullscreen {
+    position: absolute;
+    top: 0;
+    right: 28px;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font: 16px sans-serif;
+    line-height: 28px;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+    transition: all 0.25s ease-out;
+}
+
+.window-fullscreen:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.window-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font: 16px sans-serif;
+    line-height: 28px;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+}
+
+.window-close:hover {
+    background: #ffffff1a;
+}
+
+
+.window:fullscreen {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+    transition: all 0.25s ease-out;
+    background-image: url('images/Sea-angel-bg.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-color: #1a1a1a !important; 
+}
+
+
+
+.window:fullscreen .window-header {
+    width: 100% !important;
+    border-radius: 0 !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.window:fullscreen iframe {
+    width: 100% !important;
+    height: 100% !important;
+    flex-grow: 1 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important; 
+}
+
+.window:fullscreen hover {
+    background: #ffffff1a;
+    border-bottom-left-radius: 10px;
+}
+#draggable {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    color: (207, 211, 15)
+}
+
+
+#tabImage {
+    display: none; /* Hidden by default when looking at the tab */
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
